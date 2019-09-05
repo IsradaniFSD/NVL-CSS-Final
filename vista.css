@@ -1,0 +1,103 @@
+*{
+	box-sizing:border-box;
+}
+body{
+	margin:10px;
+	background-color:#F1CCFF;
+	text-align: justify;
+}
+.header{
+	background-color: #AAAAAA ;  
+  	padding: 20px;
+  	text-align: center
+}
+
+#columna {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+/*Que el header no se meta en el body*/
+#contenido:after{
+  content:"";
+  display:table;
+  clear:both;
+
+}
+
+/* Para que estén en orden*/
+@media screen and (max-width:600px) {
+#columna {
+    width: 100%;
+  	}
+}
+
+.footer {
+
+  background-image: url(foot.jpg);
+  color: white;
+  text-shadow: 2px 2px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  padding: 15px;
+}
+#lin{
+	width: 50px; 
+	height: 50px; 
+}
+
+/* quito el subrrallado de los links externos*/
+a:link{
+	text-decoration: none;
+}
+
+/* Barra de navegación izquierda (Menú)*/
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 200px;
+  background-color: #AAAAAA ;
+}
+
+li a {
+  display: block;
+  color: #000;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+/* Cambio el color del menú al pasar el raton encima*/
+li a:hover {
+  background-color: white;
+  color: red;
+}
+
+/* Colores y fuentes de los párrafos*/
+section>a{
+	color:red;
+	font-family:sans-serif ;
+	font-style: oblique;
+	font-size: 17px;
+	text-align: justify;
+
+
+}
+h4+p{
+	color:white;
+	font-family:sans-serif ;
+	font-style: oblique;
+	font-size: 17px;
+}
+
+p{
+	font-family:Homer Simpson, cursive ;
+}
+
+
+
+
+
+
+ 
+
+    	
